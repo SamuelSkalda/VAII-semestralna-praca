@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow – Moje úlohy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <a class="brand" href="index.html">StudyFlow</a>
+      <div class="account">Študent <span aria-hidden="true">▾</span></div>
+    </header>
+    <div class="workspace">
+      <nav class="sidebar" aria-label="Hlavná navigácia">
+        <h2>Navigácia</h2>
+        <a class="nav-link" href="index.html">Dashboard</a>
+        <a class="nav-link" href="#">Predmety</a>
+        <a class="nav-link active" href="ulohy.html" aria-current="page">Úlohy</a>
+        <a class="nav-link" href="#">Kalendár</a>
+        <a class="nav-link" href="#">Profil</a>
+      </nav>
+      <main class="content">
+        <div class="page-heading">
+          <h1>Moje úlohy</h1>
+          <button type="button" class="primary-button">+ Nová úloha</button>
+        </div>
+        <section class="filters" aria-labelledby="filters-heading">
+          <h2 id="filters-heading">Filtrovanie úloh</h2>
+          <div class="filter-grid">
+            <label>Predmet
+              <select><option>Všetky</option><option>Databázy</option><option>Vývoj webových aplikácií</option><option>Matematika</option></select>
+            </label>
+            <label>Stav
+              <select><option>Všetky</option><option>Rozpracované</option><option>Nedokončené</option><option>Dokončené</option></select>
+            </label>
+            <label>Vyhľadávanie
+              <input type="search" placeholder="Hľadať úlohu...">
+            </label>
+          </div>
+        </section>
+        <section class="task-section" aria-label="Zoznam úloh">
+          <div class="task-list-heading" aria-hidden="true"><span>Úloha / Predmet</span><span>Termín</span><span>Stav</span><span>Akcie</span></div>
+          <article class="task-row">
+            <div class="task-name"><h3>Semestrálna práca</h3><p>Databázy</p></div>
+            <div class="task-field"><span class="mobile-label">Termín:</span><time datetime="2026-12-15">15. 12. 2026</time></div>
+            <div class="task-field"><span class="mobile-label">Stav:</span><span class="status">Rozpracované</span></div>
+            <div class="task-actions"><button type="button" aria-label="Upraviť semestrálnu prácu" title="Upraviť">✎</button><button type="button" aria-label="Odstrániť semestrálnu prácu" title="Odstrániť">×</button></div>
+          </article>
+          <article class="task-row">
+            <div class="task-name"><h3>Projekt VAII</h3><p>Vývoj webových aplikácií</p></div>
+            <div class="task-field"><span class="mobile-label">Termín:</span><time datetime="2026-12-20">20. 12. 2026</time></div>
+            <div class="task-field"><span class="mobile-label">Stav:</span><span class="status">Nedokončené</span></div>
+            <div class="task-actions"><button type="button" aria-label="Upraviť projekt VAII" title="Upraviť">✎</button><button type="button" aria-label="Odstrániť projekt VAII" title="Odstrániť">×</button></div>
+          </article>
+          <article class="task-row">
+            <div class="task-name"><h3>Domáca úloha</h3><p>Matematika</p></div>
+            <div class="task-field"><span class="mobile-label">Termín:</span><time datetime="2026-12-10">10. 12. 2026</time></div>
+            <div class="task-field"><span class="mobile-label">Stav:</span><span class="status">Dokončené</span></div>
+            <div class="task-actions"><button type="button" aria-label="Upraviť domácu úlohu" title="Upraviť">✎</button><button type="button" aria-label="Odstrániť domácu úlohu" title="Odstrániť">×</button></div>
+          </article>
+        </section>
+        <p class="hint">Kliknutím na úlohu sa v budúcej verzii otvorí detail s prílohami.</p>
+      </main>
+    </div>
+    <footer class="footer">StudyFlow · pätička</footer>
+  </div>
+</body>
+</html>
