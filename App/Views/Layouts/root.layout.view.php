@@ -30,7 +30,10 @@
                 Dashboard
             </a>
 
-            <a class="nav-link" href="#">Predmety</a>
+            <a class="nav-link"
+               href="<?= $link->url('subject.index') ?>">
+                Predmety
+            </a>
 
             <a class="nav-link"
                href="<?= $link->url('home.ulohy') ?>">

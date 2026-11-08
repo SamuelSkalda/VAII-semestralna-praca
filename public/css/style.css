@@ -42,6 +42,22 @@ h1 { margin: 0 0 24px; font-size: 1.65rem; }
 .task-actions button:hover { background: #eef1f4; }
 .mobile-label { display: none; }
 .hint { color: #66717b; font-size: .9rem; margin-top: 18px; }
+/* Predmety – zoznam a formulár (CRUD) */
+a.primary-button { text-decoration: none; display: inline-block; }
+.task-list-heading.subject-row, .task-row.subject-row { grid-template-columns: minmax(180px, 2fr) minmax(90px, 1fr) minmax(90px, 1fr) 80px; }
+.task-actions form { margin: 0; }
+.icon-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; background: #fff; border: 1px solid #cbd3da; border-radius: 5px; min-width: 30px; min-height: 32px; font-size: 1.1rem; }
+.icon-button:hover { background: #eef1f4; }
+.empty-state { padding: 20px; margin: 0; color: #65717e; }
+.form-card { max-width: 560px; padding: 24px; background: #fff; border: 1px solid #d7dce1; border-radius: 10px; display: flex; flex-direction: column; gap: 18px; }
+.form-card label { display: flex; flex-direction: column; gap: 8px; font-size: .9rem; font-weight: 600; }
+.form-card input { padding: 10px 12px; border: 1px solid #bfc8d1; border-radius: 6px; background: #fff; color: #27313b; }
+.form-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.secondary-button { border: 1px solid #bfc8d1; background: #fff; color: #27313b; border-radius: 7px; padding: 11px 17px; text-decoration: none; }
+.secondary-button:hover { background: #eef1f4; }
+.form-errors { max-width: 560px; padding: 14px 18px; margin-bottom: 18px; border: 1px solid #e0b4b4; background: #fbeeee; color: #8a2b2b; border-radius: 8px; }
+.form-errors p { margin: 0; }
+.form-errors p + p { margin-top: 6px; }
 @media (max-width: 950px) {
   .workspace { grid-template-columns: 185px minmax(0, 1fr); }
   .content { padding: 24px; }
@@ -73,4 +89,10 @@ h1 { margin: 0 0 24px; font-size: 1.65rem; }
   .account { font-size: .8rem; }
   .task-row { grid-template-columns: 1fr; }
   .task-actions { grid-column: 1; grid-row: auto; justify-content: flex-start; }
+}
+@media (max-width: 700px) {
+  .task-row.subject-row { grid-template-columns: 1fr auto; }
+}
+@media (max-width: 360px) {
+  .task-row.subject-row { grid-template-columns: 1fr; }
 }
